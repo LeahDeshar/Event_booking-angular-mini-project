@@ -1,0 +1,215 @@
+.myNav {
+    background-color: #f4f3f3 !important;
+}
+.book-div {
+    padding: 80px 0;
+}
+
+
+
+.section-title {
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+.schedule-section {
+    padding-bottom: 60px;
+}
+
+.schedule-tab .nav-tabs {
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 60px;
+    -webkit-box-shadow: 3px 10px 30px rgba(74, 74, 77, 0.15);
+    box-shadow: 3px 10px 30px rgba(74, 74, 77, 0.15);
+}
+
+.schedule-tab .nav-tabs .nav-item {
+    border-right: 1px solid #e7e7e8;
+    width: 20%;
+    text-align: center;
+}
+
+.schedule-tab .nav-tabs .nav-item:last-child {
+    border-right: none;
+}
+
+.schedule-tab .nav-tabs .nav-item .nav-link {
+    padding: 14px 0 13px 0;
+    border: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.schedule-tab .nav-tabs .nav-item .nav-link.active {
+    border-radius: 2px;
+    border-color: #e7e7e8;
+}
+
+.schedule-tab .nav-tabs .nav-item .nav-link.active h5 {
+    color: #ffffff;
+}
+
+.schedule-tab .nav-tabs .nav-item .nav-link.active p {
+    color: #ffffff;
+}
+
+.schedule-tab .nav-tabs .nav-item .nav-link h5 {
+    color: #171822;
+    font-weight: 600;
+}
+
+.schedule-tab .nav-tabs .nav-item .nav-link p {
+    margin-bottom: 0;
+}
+
+.schedule-tab .st-content {
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    margin-bottom: 40px;
+    -webkit-transition: all 0.3s;
+    background-color: lavender;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.schedule-tab .st-content:hover {
+    -webkit-box-shadow: 3px 12px 30px rgba(23, 24, 34, 0.05);
+    box-shadow: 3px 12px 30px rgba(23, 24, 34, 0.05);
+    border: 1px solid transparent;
+    background-color: #91e2c7;
+}
+
+.schedule-tab .st-content .sc-pic {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.schedule-tab .st-content .sc-pic img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.schedule-tab .st-content .sc-text {
+    padding: 58px 0;
+}
+
+.schedule-tab .st-content .sc-text h4 {
+    color: #171822;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.schedule-tab .st-content .sc-text ul li {
+    list-style: none;
+    display: inline-block;
+    font-size: 16px;
+    color: #6a6b7c;
+    margin-right: 25px;
+    position: relative;
+}
+
+.schedule-tab .st-content .sc-text ul li:last-child:after {
+    display: none;
+}
+
+.schedule-tab .st-content .sc-text ul li:after {
+    position: absolute;
+    right: -18px;
+    top: 0;
+    content: "/";
+}
+
+.schedule-tab .st-content .sc-text ul li i {
+    color: #f44949;
+    font-size: 14px;
+}
+
+.schedule-tab .st-content .sc-widget {
+    padding: 58px 0;
+}
+
+.bg-gradient,
+.bd-text .bd-tag-share .s-share a:hover,
+.bh-text .play-btn,
+.schedule-table-tab .nav-tabs .nav-item .nav-link.active,
+.newslatter-inner .ni-form button,
+.latest-item .li-tag,
+.price-item .price-btn:hover,
+.price-item .pi-price,
+.price-item .tr-tag,
+.schedule-tab .nav-tabs .nav-item .nav-link.active,
+.site-btn {
+    background-image: -o-linear-gradient(330deg, #ee8425 0%, #f9488b 100%), -o-linear-gradient(330deg, #ee8425 0%, #f9488b 100%);
+    background-image: linear-gradient(120deg, #ee8425 0%, #f9488b 100%), linear-gradient(120deg, #ee8425 0%, #f9488b 100%);
+}
+
+.schedule-tab .st-content .sc-widget li {
+    list-style: none;
+    font-size: 16px;
+    color: #6a6b7c;
+    line-height: 32px;
+    position: relative;
+    padding-left: 22px;
+}
+
+.schedule-tab .st-content .sc-widget li i {
+    color: #f44949;
+    position: absolute;
+    left: 0;
+    top: 7px;
+}
+
+.login-container {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px 0;
+    color: #333;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+ 
+
+.login-container input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.login-container button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.modal-body  {
+    padding: 1px !important;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}

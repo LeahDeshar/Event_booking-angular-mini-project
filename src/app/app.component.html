@@ -1,0 +1,94 @@
+<nav class="navbar navbar-expand-lg navbar-white myNav">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="/assets/eventLogo.png" alt="" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               
+
+            </ul>
+            <form class="d-flex nav" *ngIf="!isUserLoggedin"> 
+                <button class="btn btn-outline-primary round-button mx-2" type="button" (click)="openLogin()">Login</button>
+                <button class="btn btn-success round-button" type="button">Register</button>
+            </form>
+            <form class="d-flex nav" *ngIf="isUserLoggedin"> 
+              <h5>Welcom {{loggedUserData.name}}</h5>
+               <button class="btn btn-success round-button" type="button" (click)="onLogoff()">Logout</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+            <div class="container login" *ngIf="isLoginView">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <label for="ContactNo">Contact Number:</label>
+                    <input type="text" id="ContactNo" name="ContactNo" [(ngModel)]="loginObj.ContactNo" required>
+            
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" [(ngModel)]="loginObj.Password" name="loginPassword" required>
+            
+                    <button type="submit" class="btn btn-primary" (click)="onLogin()">Login</button>
+                </form>
+            
+                <div class="switch-form">
+                    Don't have an account? <a href="" (click)="isLoginView = false">Sign up</a>
+                </div>
+            </div>
+            
+            <div class="container login"  *ngIf="!isLoginView" id="signupContainer">
+                <h2>Sign Up</h2>
+                <form id="signupForm ">
+                    <label for="signupUsername">Name</label>
+                    <input type="text" id="signupUsername" [(ngModel)]="registerObj.Name" name="signupUsername" required>
+            
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" name="signupEmail" [(ngModel)]="registerObj.Email" required>
+            
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" name="signupPassword" [(ngModel)]="registerObj.Password" required>
+
+                    <label for="signupContact">ContactNo</label>
+                    <input type="text" id="signupContact" name="signupContact" [(ngModel)]="registerObj.ContactNo" required>
+
+                    <label for="signupRole">You are: </label>
+                    <select name="role" id="role" [(ngModel)]="loginObj.Role" required>
+                        <option value="">Select your role</option>
+                        <option value="Event Planner">Event Planner</option>
+                        <option value="Customer">Customer</option>
+
+                    </select>
+                    <br>
+
+                    <button type="submit" class="btn btn-primary" (click)="onRegister()">Register</button>
+                </form>
+            
+                <div class="switch-form">
+                    Already have an account? <a href="" (click)="isLoginView = true">Login</a>
+                </div>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+<div class="container">
+    <button type="button" class="btn btn-success m-2" routerLink="new-event">Create Event</button>
+    <button type="button" class="btn btn-success m-2" routerLink="event-list">List Of Event</button>
+    <button type="button" class="btn btn-success m-2" routerLink="event-bookings">Bookings</button>
+
+    
+</div>
+
+
+<router-outlet></router-outlet>
