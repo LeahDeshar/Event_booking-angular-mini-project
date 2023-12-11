@@ -1,27 +1,30 @@
-# EventBooking
+# Angular Event Booking Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.6.
+This is a mini project for an Angular event booking application. The application utilizes the following functionalities:
 
-## Development server
+1. **Login and Registration:** Users can register or log in to access the application.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+2. **Create Event:** Allows users to create new events.
 
-## Code scaffolding
+3. **Event List:** Displays a list of available events.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+4. **Book Tickets:** Enables users to book tickets for a selected event.
 
-## Build
+5. **My Tickets:** Shows a list of tickets booked by the logged-in user.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+6. **Booking:** Manages the booking process.
 
-## Running unit tests
+## API
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The application interacts with the following API: [Event Booking API](https://freeapi.miniprojectideas.com/index.html)
 
-## Running end-to-end tests
+### Components
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- `Login and Registration Component`: Handles user login and registration.
+- `CreateEventComponent`: Allows users to create new events.
+- `EventListComponent`: Displays a list of available events.
+- `BookTicketsComponent`: Handles the ticket booking process.
+- `MyTicketsComponent`: Shows a list of tickets booked by the user.
+- `more`..
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
